@@ -20,7 +20,7 @@ wget https://launchpad.net/plone/5.0/5.0b3/+download/Plone-5.0b3-UnifiedInstalle
 echo "unpacking the installer"
 tar xfz Plone-5.0b3-UnifiedInstaller.tgz
 
-cd Plone-5.0b3-UnifiedInstaller.tgz
+cd Plone-5.0b3-UnifiedInstaller
 echo "installing (first pass)"
 ./install.sh standalone --target=$HOME/plone5 &
 spinner $!
