@@ -22,11 +22,11 @@ tar xfz Plone-5.0b3-UnifiedInstaller.tgz
 
 cd Plone-5.0b3-UnifiedInstaller.tgz
 echo "installing (first pass)"
-./install.sh standalone --target=$HOME/workspace &
+./install.sh standalone --target=$HOME/plone5 &
 spinner $!
 # the step above seems to only half install it so we brute force it a bit
 echo "installing (second pass)"
-cd $HOME/workspace/zinstance
+cd $HOME/plone5/zinstance
 bin/buildout &
 spinner $!
 
